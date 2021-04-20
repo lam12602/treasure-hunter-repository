@@ -775,6 +775,7 @@ GameObject:
   - component: {fileID: 1050923577}
   - component: {fileID: 1050923578}
   - component: {fileID: 1050923579}
+  - component: {fileID: 1050923580}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -855,8 +856,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1050923573}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.93, y: -1.37, z: 0}
-  m_LocalScale: {x: 3.9993865, y: 3.3516493, z: 1}
+  m_LocalPosition: {x: -6.967, y: -1.419, z: 0}
+  m_LocalScale: {x: 4.6633167, y: 3.0270622, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -917,6 +918,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1050923580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1050923573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f2c0ab134fdc014da93dfb157cac98f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1079624789
 GameObject:
   m_ObjectHideFlags: 0
@@ -1128,6 +1141,8 @@ GameObject:
   - component: {fileID: 1333879479}
   - component: {fileID: 1333879478}
   - component: {fileID: 1333879480}
+  - component: {fileID: 1333879482}
+  - component: {fileID: 1333879481}
   m_Layer: 0
   m_Name: Bat Ememy_0
   m_TagString: Untagged
@@ -1194,8 +1209,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1333879477}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.103, y: -0.9407, z: 0}
-  m_LocalScale: {x: 5.879632, y: 6.7407475, z: 1}
+  m_LocalPosition: {x: -3.108, y: -0.716, z: 0}
+  m_LocalScale: {x: 7.4175143, y: 6.2649026, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -1219,6 +1234,44 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!61 &1333879481
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1333879477}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.14}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.14}
+  m_EdgeRadius: 0
+--- !u!114 &1333879482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1333879477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71fc50cfc954d7b4ca7612eaf7fe4dec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1759949554
 GameObject:
   m_ObjectHideFlags: 0

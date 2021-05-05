@@ -7,6 +7,7 @@ public class Player_Movement : MonoBehaviour
     //public variables
     public float movementForce = 10f;
     public float jumpForce = 1000f;
+    public Collider2D jumpSensor;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,7 +15,7 @@ public class Player_Movement : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         //Condition: When the player presses a button
         if (Input.GetKey(KeyCode.D))
@@ -57,7 +58,8 @@ public class Player_Movement : MonoBehaviour
         }
 
         //condition: when the player first presses space
-        if (Input.GetKeyDown(KeyCode.Space))
+        bool isTuchingGround = jumpSensor.IsTouchingLayers(LayerMask.GetMask("Ground"));
+        if (Input.GetKeyDown(KeyCode.Space)&& isTuchingGround)
         {
             //Action applay a force(push player up)
             Rigidbody2D ourRigidbody = GetComponent<Rigidbody2D>();

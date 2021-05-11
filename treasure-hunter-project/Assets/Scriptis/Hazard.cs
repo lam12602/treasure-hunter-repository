@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Hazard : MonoBehaviour
 {
@@ -16,7 +17,8 @@ public class Hazard : MonoBehaviour
         {
             //this means there was a playerhealth script on the object
             //which means the object is the player
-            player.Kill();
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
 
         }
     }
